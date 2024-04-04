@@ -13,7 +13,7 @@ struct Section {
     var rows: [Song] = []
 }
 
-class Common: NSObject {
+class CommonModel: NSObject {
     public func convertArray(_ sourceArray: [Song], for segment: SegmentEnum) -> [Section] {
         
         var dict: [String: [Song]] = [:]

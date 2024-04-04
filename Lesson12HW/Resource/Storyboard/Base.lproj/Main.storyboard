@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -357,15 +357,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He3-Cv-6eq" customClass="PlaylistByGenreView" customModule="Lesson12HW" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XXi-fZ-Vt2">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="20" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XXi-fZ-Vt2">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainPlaylistCell" textLabel="IAo-PK-N7A" detailTextLabel="qDg-IC-OeB" style="IBUITableViewCellStyleSubtitle" id="XN5-oz-uP0">
-                                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                                <rect key="frame" x="0.0" y="50" width="393" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XN5-oz-uP0" id="41j-KB-o8e">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IAo-PK-N7A">
@@ -428,8 +428,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oad-nZ-CZW" customClass="PlaylistModesView" customModule="Lesson12HW" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bk8-Ph-rws">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="32"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-zX-Vq8">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                        <rect key="frame" x="0.0" y="31" width="393" height="787"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainPlaylistCell" textLabel="c2F-to-29k" detailTextLabel="Kon-bs-TGg" style="IBUITableViewCellStyleSubtitle" id="AkY-Kq-ag3">
@@ -461,8 +468,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bk8-Ph-rws" secondAttribute="trailing" id="0i6-53-oG0"/>
+                                    <constraint firstItem="9gU-zX-Vq8" firstAttribute="top" secondItem="bk8-Ph-rws" secondAttribute="bottom" id="6PJ-bW-2OL"/>
                                     <constraint firstAttribute="bottom" secondItem="9gU-zX-Vq8" secondAttribute="bottom" id="8xf-57-PnH"/>
-                                    <constraint firstItem="9gU-zX-Vq8" firstAttribute="top" secondItem="Oad-nZ-CZW" secondAttribute="top" id="dee-30-Uyz"/>
+                                    <constraint firstItem="bk8-Ph-rws" firstAttribute="leading" secondItem="Oad-nZ-CZW" secondAttribute="leading" id="9R2-sL-Zq3"/>
+                                    <constraint firstItem="bk8-Ph-rws" firstAttribute="top" secondItem="Oad-nZ-CZW" secondAttribute="top" id="EKB-oK-ilM"/>
                                     <constraint firstItem="9gU-zX-Vq8" firstAttribute="leading" secondItem="Oad-nZ-CZW" secondAttribute="leading" id="rz9-74-Z3I"/>
                                     <constraint firstAttribute="trailing" secondItem="9gU-zX-Vq8" secondAttribute="trailing" id="ygS-hC-xA3"/>
                                 </constraints>
@@ -486,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lc4-Kf-CDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2195" y="1348"/>
+            <point key="canvasLocation" x="2194.6564885496182" y="1347.8873239436621"/>
         </scene>
     </scenes>
     <resources>

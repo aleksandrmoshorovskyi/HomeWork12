@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8B572572BBD8379000E9163 /* PlaylistDeleteViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B572562BBD8379000E9163 /* PlaylistDeleteViewController+TableView.swift */; };
+		A8B572592BBD88B4000E9163 /* PlaylistMoveDeleteViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B572582BBD88B4000E9163 /* PlaylistMoveDeleteViewController+TableView.swift */; };
+		A8B5725B2BBD97CA000E9163 /* PlaylistByGenreViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B5725A2BBD97CA000E9163 /* PlaylistByGenreViewController+TableView.swift */; };
+		A8B5725D2BBE85D7000E9163 /* PlaylistModesViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B5725C2BBE85D7000E9163 /* PlaylistModesViewController+TableView.swift */; };
+		A8B5725F2BBE92AF000E9163 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B5725E2BBE92AF000E9163 /* Enum.swift */; };
+		A8B572612BBEBFD8000E9163 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B572602BBEBFD8000E9163 /* CommonModel.swift */; };
 		CE4715042BBAC38F00759142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715032BBAC38F00759142 /* AppDelegate.swift */; };
 		CE4715062BBAC38F00759142 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4715052BBAC38F00759142 /* SceneDelegate.swift */; };
 		CE47150B2BBAC38F00759142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4715092BBAC38F00759142 /* Main.storyboard */; };
@@ -42,6 +48,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8B572562BBD8379000E9163 /* PlaylistDeleteViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDeleteViewController+TableView.swift"; sourceTree = "<group>"; };
+		A8B572582BBD88B4000E9163 /* PlaylistMoveDeleteViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistMoveDeleteViewController+TableView.swift"; sourceTree = "<group>"; };
+		A8B5725A2BBD97CA000E9163 /* PlaylistByGenreViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistByGenreViewController+TableView.swift"; sourceTree = "<group>"; };
+		A8B5725C2BBE85D7000E9163 /* PlaylistModesViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistModesViewController+TableView.swift"; sourceTree = "<group>"; };
+		A8B5725E2BBE92AF000E9163 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		A8B572602BBEBFD8000E9163 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		CE4715002BBAC38F00759142 /* Lesson12HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson12HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4715032BBAC38F00759142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4715052BBAC38F00759142 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				CE47153C2BBB082200759142 /* Playlist.swift */,
+				A8B5725E2BBE92AF000E9163 /* Enum.swift */,
+				A8B572602BBEBFD8000E9163 /* CommonModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -260,6 +274,7 @@
 		CE47155A2BBC269100759142 /* PlaylistDeleteScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A8B572562BBD8379000E9163 /* PlaylistDeleteViewController+TableView.swift */,
 				CE47155B2BBC26A300759142 /* PlaylistDeleteViewController.swift */,
 				CE47155D2BBC26AB00759142 /* PlaylistDeleteModel.swift */,
 				CE47155F2BBC26B200759142 /* PlaylistDeleteView.swift */,
@@ -270,6 +285,7 @@
 		CE4715612BBC2D6000759142 /* PlaylistMoveDeleteScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A8B572582BBD88B4000E9163 /* PlaylistMoveDeleteViewController+TableView.swift */,
 				CE4715622BBC2D7700759142 /* PlaylistMoveDeleteViewController.swift */,
 				CE4715642BBC2D8000759142 /* PlaylistMoveDeleteModel.swift */,
 				CE4715662BBC2D8C00759142 /* PlaylistMoveDeleteView.swift */,
@@ -280,6 +296,7 @@
 		CE4715682BBC303800759142 /* PlaylistByGenreScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A8B5725A2BBD97CA000E9163 /* PlaylistByGenreViewController+TableView.swift */,
 				CE4715692BBC304F00759142 /* PlaylistByGenreViewController.swift */,
 				CE47156B2BBC306300759142 /* PlaylistByGenreModel.swift */,
 				CE47156D2BBC306F00759142 /* PlaylistByGenreView.swift */,
@@ -290,6 +307,7 @@
 		CE47156F2BBC319400759142 /* PlaylistModesScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A8B5725C2BBE85D7000E9163 /* PlaylistModesViewController+TableView.swift */,
 				CE4715702BBC31C700759142 /* PlaylistModesViewController.swift */,
 				CE4715722BBC31D000759142 /* PlaylistModesModel.swift */,
 				CE4715742BBC31D800759142 /* PlaylistModesView.swift */,
@@ -369,13 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B572612BBEBFD8000E9163 /* CommonModel.swift in Sources */,
 				CE4715232BBADC8F00759142 /* InitialModel.swift in Sources */,
+				A8B5725B2BBD97CA000E9163 /* PlaylistByGenreViewController+TableView.swift in Sources */,
 				CE4715602BBC26B200759142 /* PlaylistDeleteView.swift in Sources */,
 				CE47153D2BBB082200759142 /* Playlist.swift in Sources */,
 				CE47152C2BBADF0A00759142 /* MainView.swift in Sources */,
 				CE47156C2BBC306300759142 /* PlaylistByGenreModel.swift in Sources */,
 				CE4715672BBC2D8C00759142 /* PlaylistMoveDeleteView.swift in Sources */,
+				A8B572592BBD88B4000E9163 /* PlaylistMoveDeleteViewController+TableView.swift in Sources */,
 				CE4715442BBB0CEC00759142 /* MainPlaylistView.swift in Sources */,
+				A8B572572BBD8379000E9163 /* PlaylistDeleteViewController+TableView.swift in Sources */,
 				CE4715752BBC31D800759142 /* PlaylistModesView.swift in Sources */,
 				CE4715212BBADC7800759142 /* InitialViewController.swift in Sources */,
 				CE47155C2BBC26A300759142 /* PlaylistDeleteViewController.swift in Sources */,
@@ -392,9 +414,11 @@
 				CE4715402BBB0CC300759142 /* MainPlaylistViewController.swift in Sources */,
 				CE47156A2BBC304F00759142 /* PlaylistByGenreViewController.swift in Sources */,
 				CE47156E2BBC306F00759142 /* PlaylistByGenreView.swift in Sources */,
+				A8B5725F2BBE92AF000E9163 /* Enum.swift in Sources */,
 				CE4715712BBC31C700759142 /* PlaylistModesViewController.swift in Sources */,
 				CE4715422BBB0CDB00759142 /* MainPlaylistModel.swift in Sources */,
 				CE4715282BBADEDE00759142 /* MainViewController.swift in Sources */,
+				A8B5725D2BBE85D7000E9163 /* PlaylistModesViewController+TableView.swift in Sources */,
 				CE4715252BBADCA100759142 /* InitialView.swift in Sources */,
 				CE4715062BBAC38F00759142 /* SceneDelegate.swift in Sources */,
 			);
