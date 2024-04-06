@@ -31,8 +31,8 @@ class CommonModel: NSObject {
         }
         
         var destinationArray: [Section] = groupedData.compactMap {
-            key, value in
-            return Section(group: key, rows: value)
+            //key, value in return Section(group: key, rows: value)
+            Section(group: $0, rows: $1)
         }
         
         destinationArray.sort() { $0.group < $1.group}
