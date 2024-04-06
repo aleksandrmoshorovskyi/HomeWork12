@@ -40,6 +40,7 @@ class PlaylistModesViewController: UIViewController {
     }
 }
 
+// MARK: - PlaylistModesModelDelegate
 extension PlaylistModesViewController: PlaylistModesModelDelegate {
     
     func dataDidLoad() {
@@ -47,6 +48,7 @@ extension PlaylistModesViewController: PlaylistModesModelDelegate {
     }
 }
 
+// MARK: - PlaylistModesViewDelegate
 extension PlaylistModesViewController: PlaylistModesViewDelegate {
     
 }

@@ -30,6 +30,7 @@ class PlaylistDeleteViewController: UIViewController {
     }
 }
 
+// MARK: - PlaylistDeleteModelDelegate
 extension PlaylistDeleteViewController: PlaylistDeleteModelDelegate {
     
     func dataDidLoad() {
@@ -37,6 +38,7 @@ extension PlaylistDeleteViewController: PlaylistDeleteModelDelegate {
     }
 }
 
+// MARK: - PlaylistDeleteViewDelegate
 extension PlaylistDeleteViewController: PlaylistDeleteViewDelegate {
     
 }

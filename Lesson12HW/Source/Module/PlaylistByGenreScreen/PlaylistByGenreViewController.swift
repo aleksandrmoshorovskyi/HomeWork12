@@ -30,6 +30,7 @@ class PlaylistByGenreViewController: UIViewController {
     }
 }
 
+// MARK: - PlaylistByGenreModelDelegate
 extension PlaylistByGenreViewController: PlaylistByGenreModelDelegate {
     
     func dataDidLoad() {
@@ -37,6 +38,7 @@ extension PlaylistByGenreViewController: PlaylistByGenreModelDelegate {
     }
 }
 
+// MARK: - PlaylistByGenreViewDelegate
 extension PlaylistByGenreViewController: PlaylistByGenreViewDelegate {
     
 }

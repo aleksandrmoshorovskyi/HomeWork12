@@ -14,6 +14,8 @@ struct Section {
 }
 
 class CommonModel: NSObject {
+    
+    // MARK: - convertArrayNewVersion
     func convertArray(_ sourceArray: [Song], for segment: SegmentEnum) -> [Section] {
         
         let groupedData = Dictionary(grouping: sourceArray) {
@@ -38,6 +40,7 @@ class CommonModel: NSObject {
         return destinationArray
     }
     
+    // MARK: - convertArrayOldVersion
     func convertArrayOldVersion(_ sourceArray: [Song], for segment: SegmentEnum) -> [Section] {
         
         var dict: [String: [Song]] = [:]

@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - UITableViewDelegate
 extension PlaylistByGenreViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -15,6 +16,7 @@ extension PlaylistByGenreViewController: UITableViewDelegate {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension PlaylistByGenreViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -30,6 +30,7 @@ class MainPlaylistViewController: UIViewController {
     }
 }
 
+// MARK: - MainPlaylistModelDelegate
 extension MainPlaylistViewController: MainPlaylistModelDelegate {
     
     func dataDidLoad() {
@@ -37,10 +38,12 @@ extension MainPlaylistViewController: MainPlaylistModelDelegate {
     }
 }
 
+// MARK: - MainPlaylistViewDelegate
 extension MainPlaylistViewController: MainPlaylistViewDelegate {
     
 }
 
+// MARK: - UITableViewDataSource
 extension MainPlaylistViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,6 +68,7 @@ extension MainPlaylistViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension MainPlaylistViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

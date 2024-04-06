@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - UITableViewDelegate
 extension PlaylistMoveDeleteViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -24,6 +25,7 @@ extension PlaylistMoveDeleteViewController: UITableViewDelegate {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension PlaylistMoveDeleteViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
