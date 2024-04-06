@@ -14,7 +14,31 @@ struct Section {
 }
 
 class CommonModel: NSObject {
-    public func convertArray(_ sourceArray: [Song], for segment: SegmentEnum) -> [Section] {
+    func convertArray(_ sourceArray: [Song], for segment: SegmentEnum) -> [Section] {
+        
+        let groupedData = Dictionary(grouping: sourceArray) {
+    
+            switch segment {
+            case .All:
+                ""
+            case .Genre:
+                $0.genre
+            case .Author:
+                $0.author
+            }
+        }
+        
+        var destinationArray: [Section] = groupedData.compactMap {
+            key, value in
+            return Section(group: key, rows: value)
+        }
+        
+        destinationArray.sort() { $0.group < $1.group}
+        
+        return destinationArray
+    }
+    
+    func convertArrayOldVersion(_ sourceArray: [Song], for segment: SegmentEnum) -> [Section] {
         
         var dict: [String: [Song]] = [:]
         
